@@ -4,8 +4,8 @@
 <head>
     <style>
         html,
-        body,
-        .test {
+        body {
+            background-color: #333;
             position: absolute;
             top: 0;
             bottom: 0;
@@ -14,16 +14,21 @@
             margin: 0;
             padding: 0;
             overflow: hidden;
-            background-color: #333;
         }
 
         .test {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
             margin: 1rem;
+            padding: 0;
             box-shadow: 0 0 1rem 0.1rem #555;
         }
 
         .test>svg {
-            transform: translate(1100px, 400px) scale(8)
+            transform: translate(1100px, 600px) scale(8);
         }
     </style>
 </head>
