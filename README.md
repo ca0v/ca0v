@@ -1,6 +1,6 @@
 I'm currently learning about data science
 
-[SVG Morph Demo](./svg_animations.html)
+[SVG Morph Demo](https://ca0v.github.io/ca0v/svg_animation.html)
 
 
 <!---
