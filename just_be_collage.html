@@ -96,7 +96,6 @@
 
         .applogo {
             display: grid;
-            grid-template-rows: 2fr 4fr 1fr;
             align-items: center;
             padding: 1rem;
         }
@@ -128,15 +127,16 @@
 
         .applogo>.main-title {
             font-family: 'Crimson Pro', serif;
-            font-size: 22pt;
-            transform: translateY(6pt);
+            font-size: 8vw;
+            transform: translateY(6vw);
         }
 
         .applogo>.sub-title {
             opacity: 0;
             font-family: 'Crimson Pro', serif;
-            font-size: 10pt;
+            font-size: 3vw;
             text-align: center;
+            transform: translateY(2vw);
         }
 
         .applogo>.sub-title.play {
@@ -144,9 +144,9 @@
         }
 
         .applogo>.logo-grid {
-            width: 128px;
-            height: 92px;
-            margin-left: calc(50% - 64px);
+            width: 35vw;
+            height: 25vw;
+            margin-left: calc(50% - 35vw/2);
             transform: scale(0.75);
         }
 
@@ -236,7 +236,7 @@
         if (1)
             document.querySelectorAll(".rotate-text").forEach(d => {
                 const circleType = new CircleType(d);
-                circleType.radius(200);
+                circleType.radius(0.75 * document.body.clientHeight);
             });
     </script>
     <script>
@@ -258,8 +258,8 @@
             const imglist = Array.from(document.querySelectorAll(".play_1"));
             imglist.splice(imglist.length, 0, ...Array.from(document.querySelectorAll(".play_2")))
             if (!imglist.length) return;
-            await sleep(500);
-            while (doit()) await sleep(500);
+            await sleep(50);
+            while (doit()) await sleep(50);
         })();
     </script>
 
