@@ -158,8 +158,8 @@
         }
 
         .applogo>.logo-grid.play {
-            transform: skewX(-3deg) scale(0.75);
-            box-shadow: 0 0 12pt 1pt var(--white);
+            transform: skewX(-12deg) scale(0.75);
+            box-shadow: 0 0 24pt 24pt rgba(200, 200, 200, 0.5);
         }
 
         .applogo .logo-panel {
@@ -169,14 +169,15 @@
 
         .applogo .logo-panel:has(>.selector) {
             background-color: #3c4043;
+            padding: 0.5vw;
         }
 
         .applogo .logo-panel {
-            border: 1px solid white;
+            outline: 0.5vw solid var(--google-blue);
         }
 
         .applogo .logo-panel:has(.logo-panel) {
-            border: none;
+            outline: none;
         }
 
         .applogo .logo-panel .selector {
@@ -199,7 +200,7 @@
 
         .logo-panel.img1.play {
             transform: rotate(-5deg) scale(1.1);
-            border: 1vw solid var(--google-red) !important;
+            outline: 1vw solid var(--google-red) !important;
             background-color: var(--google-blue);
             z-index: 1;
         }
@@ -210,7 +211,7 @@
             background-color: white !important;
             background-repeat: no-repeat;
             background-size: contain;
-            border: 1vw solid var(--google-green) !important;
+            outline: 1vw solid var(--google-green) !important;
             transform: rotate(5deg) scale(1.1);
             z-index: 1;
         }
