@@ -40,7 +40,7 @@
 
 <body>
     <div class="applogo">
-        <div class="bold center-text main-title rotate-text">Just Be Collage</div>
+        <div class="bold center-text main-title rotate-text">just.be.collage</div>
         <div class="logo-panel logo-grid play_2">
             <div class="col1 logo-panel no-right-border play_1 img1">
                 <div class="selector">1</div>
@@ -77,7 +77,9 @@
                 <div class="selector">10</div>
             </div>
         </div>
-        <div class="sub-title rotate-text-u play_2">for use with Google Photos</div>
+        <div class="sub-title rotate-text-u play_2">for use with
+            <google>Google Photos</google>
+        </div>
     </div>
 
     <style>
@@ -126,17 +128,22 @@
 
 
         .applogo>.main-title {
-            font-family: 'Crimson Pro', serif;
+            font-family: system-ui;
             font-size: 8vw;
-            transform: translateY(6vw);
+            text-align: center;
+            transform: translateY(0vw);
         }
 
         .applogo>.sub-title {
             opacity: 0;
-            font-family: 'Crimson Pro', serif;
             font-size: 3vw;
             text-align: center;
-            transform: translateY(2vw);
+            transform: translateY(0vw);
+        }
+
+        google {
+            font-family: 'Crimson Pro', serif;
+            font-size: smaller;
         }
 
         .applogo>.sub-title.play {
@@ -192,7 +199,8 @@
 
         .logo-panel.img10.play {
             transform: rotate(5deg) scale(1.1);
-            border: 3pt solid var(--google-red) !important;
+            border: 3pt solid var(--google-blue) !important;
+            background-color: var(--lite-smoke);
         }
 
         .logo-panel>.img1.play {
@@ -233,10 +241,10 @@
 
     <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js"></script>
     <script>
-        if (1)
+        if (0)
             document.querySelectorAll(".rotate-text").forEach(d => {
                 const circleType = new CircleType(d);
-                circleType.radius(0.75 * document.body.clientHeight);
+                circleType.radius(document.body.clientHeight);
             });
     </script>
     <script>
@@ -258,8 +266,8 @@
             const imglist = Array.from(document.querySelectorAll(".play_1"));
             imglist.splice(imglist.length, 0, ...Array.from(document.querySelectorAll(".play_2")))
             if (!imglist.length) return;
-            await sleep(50);
-            while (doit()) await sleep(50);
+            await sleep(500);
+            while (doit()) await sleep(250);
         })();
     </script>
 
