@@ -197,29 +197,30 @@
             transition-duration: 50ms, 50ms, 50ms, 2000ms;
         }
 
-        .logo-panel.img10.play {
-            transform: rotate(5deg) scale(1.1);
-            border: 3pt solid var(--google-blue) !important;
-            background-color: var(--lite-smoke);
+        .logo-panel.img1.play {
+            transform: rotate(-5deg) scale(1.1);
+            border: 1vw solid var(--google-red) !important;
+            background-color: var(--google-blue);
+            z-index: 1;
         }
 
-        .logo-panel>.img1.play {
+        .logo-panel>.img10.play {
             background-position: 8px 0px;
             background-image: url(./google_photos_icon.png);
             background-color: white !important;
             background-repeat: no-repeat;
             background-size: contain;
-            border: 3pt solid var(--google-blue) !important;
-            transform: rotate(-5deg) scale(1.1);
+            border: 1vw solid var(--google-green) !important;
+            transform: rotate(5deg) scale(1.1);
             z-index: 1;
         }
 
         .logo-panel>.img3.play {
-            background: linear-gradient(to top right, var(--google-yellow), var(--google-blue)) !important;
+            background: linear-gradient(to top right, var(--white), var(--google-yellow)) !important;
         }
 
         .logo-panel>.img8.play {
-            background: linear-gradient(to bottom left, var(--google-yellow), var(--google-blue)) !important;
+            background: linear-gradient(to bottom left, var(--white), var(--google-yellow)) !important;
         }
 
         .no-right-border {
@@ -239,14 +240,6 @@
         }
     </style>
 
-    <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js"></script>
-    <script>
-        if (0)
-            document.querySelectorAll(".rotate-text").forEach(d => {
-                const circleType = new CircleType(d);
-                circleType.radius(document.body.clientHeight);
-            });
-    </script>
     <script>
         (async function () {
 
