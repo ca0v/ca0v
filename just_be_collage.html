@@ -104,25 +104,33 @@
 
         @media (prefers-color-scheme: dark) {
             .applogo {
+                --shadow-color: rgba(200, 200, 200, 0.5);
                 background-color: var(--dark);
             }
 
-            .applogo>.sub-title,
+            .applogo>.sub-title {
+                color: var(--white);
+            }
+
             .applogo>.main-title {
                 color: var(--white);
-                text-shadow: 0 0 4pt var(--google-blue);
+                text-shadow: -3px 0px 1px var(--google-blue), 3px 0px 1px var(--google-yellow), 0px -3px 1px var(--google-red), 0px 3px 1px var(--google-green);
             }
         }
 
         @media (prefers-color-scheme: light) {
             .applogo {
+                --shadow-color: var(--dark-smoke);
                 background-color: var(--lite-smoke);
             }
 
-            .applogo>.sub-title,
+            .applogo>.sub-title {
+                color: var(--dark-smoke);
+            }
+
             .applogo>.main-title {
-                color: var(--dark);
-                text-shadow: 0 0 4pt var(--white);
+                color: var(--dark-smoke);
+                text-shadow: -3px 0px 1px var(--google-blue), 3px 0px 1px var(--google-yellow), 0px -3px 1px var(--google-red), 0px 3px 1px var(--google-green);
             }
         }
 
@@ -143,7 +151,7 @@
 
         google {
             font-family: 'Crimson Pro', serif;
-            font-size: smaller;
+            font-size: 2vw;
         }
 
         .applogo>.sub-title.play {
@@ -159,7 +167,7 @@
 
         .applogo>.logo-grid.play {
             transform: skewX(-12deg) scale(0.75);
-            box-shadow: 0 0 24pt 24pt rgba(200, 200, 200, 0.5);
+            box-shadow: 0 0 24pt 24pt var(--shadow-color);
         }
 
         .applogo .logo-panel {
