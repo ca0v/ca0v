@@ -46,9 +46,8 @@
         <section>
             <h2>Education</h2>
             <h4>Carnegie Mellon University</h4>
-            <p>Class of 1993</p>
-            <h6>B.S. Mathematics and Computer Science</h6>
-            <h6>B.S. Computer Engineering</h6>
+            <i>B.S. Mathematics and Computer Science</i>
+            <br /><i>B.S. Computer Engineering</i>
         </section>
         <section>
             <h2>Work Experience</h2>
@@ -56,84 +55,98 @@
             <p>Built and maintained the geospatial elements of Infor Public Sector</p>
             <ul>
                 <li>
-                    I created the map control that
-                    integrates with Infor Public Sector. It is an abstraction over the <a
+                    I created and maintained the map component that
+                    integrates Infor Public Sector with geospatial services. It is an abstraction over the <a
                         href="https://developers.arcgis.com/javascript/3/">ESRI JSAPI</a> and <a
                         href="https://openlayers.org/">OpenLayers</a> libraries.
                 </li>
                 <li>
-                    I created the map control that integrates Portal with spatial services. It uses
-                    href="https://openlayers.org/">OpenLayers</a> and is a
-                    collection of 100s of javascript modules that are assembled via
-                    event-oriented configurations into an operational map experience.
+                    I created and maintained the map control that integrates Portal with spatial services. It uses
+                    <a href="https://openlayers.org/">OpenLayers</a> and is a
+                    collection of modules composed via configuration into a map experience.
                 </li>
                 <li>
-                    I created the services that integrate Public Sector map with the backend.
+                    I built and maintained the accompanying backend service.
                 <li>
-                    I worked with several others to design a bi-directional sync with an external GIS
-                    system.
+                    I worked with others to design a bi-directional sync with external GIS
+                    systems.
                 </li>
                 <li>
                     I worked toward bringing spatial data into our system as a first-class citizen.
                 </li>
             </ul>
+            <div class="skills">
+                <li>C#</li>
+                <li>ArcGIS Server</li>
+                <li>ESRI JSAPI</li>
+                <li>SQL Spatial Types</li>
+                <li>GeoServer</li>
+                <li>MapServer</li>
+                <li>Mocha</li>
+                <li>OpenLayers</li>
+                <li>Puppeteer</li>
+                <li>Typescript</li>
+            </div>
         </section>
         <section class="rowspan-2">
             <h2>Projects</h2>
             <h4>Collage Editor</h4>
-            <p>I resigned from my Infor in June to travel the country with my family. Upon returning in December, I
-                build <a>just.be.collage</a> to learn</a> <a href="https://svelte.dev/">Svelte</a>, dotnet 7.0 on
+            <p>I resigned from Infor July 2022 to travel. In December, I
+                build <a href="https://ca0v.us/stories/static/svelte-lab/index.html">just.be.collage</a> to learn</a> <a
+                    href="https://svelte.dev/">Svelte</a>, dotnet 7.0 on
                 Ubuntu, <a href="https://www.python.org/">Python</a> and basic PaaS.
             </p>
             <div class="skills">
                 <li>css transforms</li>
+                <li>Digital Ocean</li>
+                <li>dotnet</li>
+                <li>github</li>
+                <li>python</li>
+                <li>svelte</li>
                 <li>trigonometry</li>
-                <li>svelte
-                <li>typescript
-                <li>python
-                <li>dotnet
-                <li>ubuntu
-                <li>github
-                <li>Digital Ocean
-
+                <li>typescript</li>
+                <li>ubuntu</li>
             </div>
+            <p>I also spent time with Vue, React,
+                Go, Rust,
+                and built <a href="https://ng-wordle.netlify.app/">this silly game</a> in Angular.</p>
             <h4>Meathead</h4>
             <p>Until May 2022 I was building <a href="https://github.com/corey-alix/meathead">Meathead</a> to track my
                 gym gains.</p>
             <div class="skills">
-                <li>progressive web apps
-                <li>two-way data sync
-                <li>typescript
-                <li>github
+                <li class="colspan-2">Progressive Web Apps</li>
+                <li>github</li>
+                <li class="colspan-2">two-way data sync</li>
+                <li>typescript</li>
             </div>
             <h4>Headache</h4>
             <p>In early 2022 I build <a href="https://github.com/ca0v/game-lab">Headache</a> with my younger son, who
                 loves playing Cup Head and wanted to make a copy for himself. We cloned the game controller behavior as
                 well as the spirit of the game.</p>
             <div class="skills">
-                <li>SVG animation
-                <li>requestAnimationFrame
-                <li>Working with a junior developer
-                <li>github
+                <li class="colspan-2">Collaboration</li>
+                <li>github</li>
+                <li class="colspan-2">requestAnimationFrame</li>
+                <li>SVG animation</li>
             </div>
             <h4>Little Light Show</h4>
             <p>December 2021 I build <a href="https://github.com/corey-alix/littlelightshow">Little Light Show</a> to
                 give my son a professional appearance as he started his
-                new Christmas light installation business</p>
+                new Christmas light installation business.</p>
             <div class="skills">
-                <li>Progressive Web Apps
-                <li>Offline first
-                <li>Typescript
-                <li>Netlify
-                <li>FaunaDB
-                <li>CSS Grid
-                <li>github
+                <li>CSS Grid</li>
+                <li>FaunaDB</li>
+                <li>github</li>
+                <li>Netlify</li>
+                <li>Offline first</li>
+                <li>Typescript</li>
+                <li class="colspan-2">Progressive Web Apps</li>
             </div>
         </section>
         <section>
             <h2>Outside Interests</h2>
-            <p>I enjoy mountain biking and skiing, road biking and playing soccer, I like yoga, boxing, ultimate frisbee
-                and making up games, but I love writing code more
+            <p>I enjoy mountain biking and skiing, road biking and playing soccer. I like yoga, boxing, ultimate frisbee
+                and making games, but I love writing code more
                 than all of those things.</p>
         </section>
     </main>
@@ -170,13 +183,14 @@
         content: "☑";
     }
 
-    .skills li {
+    .skills>li {
         list-style: none;
         text-transform: lowercase;
         font-style: italic;
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
+        font-size: smaller;
     }
 
     .skills li::before {
@@ -187,7 +201,8 @@
     .grid-col-2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 1rem;
+        row-gap: 0;
+        column-gap: 3rem;
     }
 
     .grid-col-3 {
@@ -202,6 +217,10 @@
 
     .rowspan-2 {
         grid-row: span 2;
+    }
+
+    .colspan-2 {
+        grid-column: span 2;
     }
 </style>
 
