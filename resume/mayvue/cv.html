@@ -10,9 +10,9 @@
   </head>
 
   <body>
-    <header class="pin">
-      <h1>Corey Alix</h1>
-      <p class="nowrap">Senior Software Engineer</p>
+    <h1 class="sticky">Corey Alix</h1>
+    <header class="sticky-if">
+      <p>Senior Software Engineer</p>
       <nav class="grid-fit">
         <p class="nowrap smaller">
           🖂
@@ -282,10 +282,11 @@
       grid-column: span 2;
     }
 
-    .pin {
+    .sticky {
       position: sticky;
       top: 0;
       background-color: var(--background-color);
+      padding-bottom: 1rem;
     }
 
     .ul {
@@ -301,15 +302,15 @@
       }
     }
 
-    @media ((max-height: 960px) or (max-width: 640px)) {
-      .pin {
-        position: static;
-      }
-    }
-
     @media (min-width: 600px) {
       .colspan {
         grid-column: span 1;
+      }
+      .sticky-if {
+        position: sticky;
+        top: 3rem;
+        background-color: var(--background-color);
+        padding-bottom: 1rem;
       }
     }
   </style>
