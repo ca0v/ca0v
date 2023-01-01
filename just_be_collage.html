@@ -2,7 +2,7 @@
 <html dir="ltr" lang="en">
 
 <head>
-    <title>Google Photos API</title>
+    <title>just.be.collage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         @media (prefers-color-scheme: dark) {
@@ -39,49 +39,50 @@
 </head>
 
 <body>
-    <div class="applogo">
-        <div class="bold center-text main-title rotate-text">just.be.collage</div>
-        <div class="logo-panel logo-grid play_2">
-            <div class="col1 logo-panel no-right-border play_1 img1">
-                <div class="selector">1</div>
+    <section class="full-page">
+        <div class="applogo">
+            <div class="bold center-text main-title rotate-text">just.be.collage</div>
+            <div class="logo-panel logo-grid play_2">
+                <div class="col1 logo-panel no-right-border play_1 img1">
+                    <div class="selector">1</div>
+                </div>
+                <div class="col2 logo-panel no-border translucent">
+                    <div class="logo-panel no-right-border">
+                        <div class="selector">2</div>
+                    </div>
+                    <div class="logo-panel with-border play_1 img3">
+                        <div class="selector">3</div>
+                    </div>
+                    <div class="logo-panel no-right-border no-top-border">
+                        <div class="selector">4</div>
+                    </div>
+                    <div class="logo-panel no-top-border">
+                        <div class="selector">5</div>
+                    </div>
+                </div>
+                <div class="logo-panel no-border translucent">
+                    <div class="logo-panel no-right-border no-top-border">
+                        <div class="selector">6</div>
+                    </div>
+                    <div class="logo-panel no-right-border no-top-border">
+                        <div class="selector">7</div>
+                    </div>
+                    <div class="logo-panel no-right-border no-top-border play_1 img8">
+                        <div class="selector">8</div>
+                    </div>
+                    <div class="logo-panel no-top-border no-right-border no-top-border">
+                        <div class="selector">9</div>
+                    </div>
+                </div>
+                <div class="logo-panel no-top-border play_1 img10">
+                    <div class="selector">10</div>
+                </div>
             </div>
-            <div class="col2 logo-panel no-border translucent">
-                <div class="logo-panel no-right-border">
-                    <div class="selector">2</div>
-                </div>
-                <div class="logo-panel with-border play_1 img3">
-                    <div class="selector">3</div>
-                </div>
-                <div class="logo-panel no-right-border no-top-border">
-                    <div class="selector">4</div>
-                </div>
-                <div class="logo-panel no-top-border">
-                    <div class="selector">5</div>
-                </div>
-            </div>
-            <div class="logo-panel no-border translucent">
-                <div class="logo-panel no-right-border no-top-border">
-                    <div class="selector">6</div>
-                </div>
-                <div class="logo-panel no-right-border no-top-border">
-                    <div class="selector">7</div>
-                </div>
-                <div class="logo-panel no-right-border no-top-border play_1 img8">
-                    <div class="selector">8</div>
-                </div>
-                <div class="logo-panel no-top-border no-right-border no-top-border">
-                    <div class="selector">9</div>
-                </div>
-            </div>
-            <div class="logo-panel no-top-border play_1 img10">
-                <div class="selector">10</div>
+            <div class="sub-title rotate-text-u play_2">for use with
+                <google>Google Photos</google>
             </div>
         </div>
-        <div class="sub-title rotate-text-u play_2">for use with
-            <google>Google Photos</google>
-        </div>
-    </div>
-
+    </section>
     <style>
         .applogo {
             --blue: rgb(30, 10, 180);
@@ -273,6 +274,26 @@
         })();
     </script>
 
+    <section class="full-page">
+        <h1>Develop a signon screen here</h1>
+    </section>
+
+    <style>
+        body {
+            overflow: hidden;
+        }
+
+        .full-page {
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            outline: none;
+        }
+    </style>
+
+    <script>
+        document.querySelectorAll(".full-page").forEach((d, i) => d.setAttribute("tabindex", i + 1));
+    </script>
 </body>
 
 </html>
