@@ -39,18 +39,18 @@
         </nav>
     </header>
     <main class="grid-col-2">
-        <section>
+        <section class="colspan-2">
             <h2>Career Objective</h2>
             <p>To share my ambition and energy with high-quality teammates that want to make a difference.
             </p>
         </section>
-        <section>
+        <section class="colspan-2">
             <h2>Education</h2>
             <h4>Carnegie Mellon University</h4>
             <i>B.S. Mathematics and Computer Science</i>
             <br /><i>B.S. Computer Engineering</i>
         </section>
-        <section>
+        <section class="colspan">
             <h2>Work Experience</h2>
             <h4>Senior Software Engineer</h4>
             <p>Built and maintained the geospatial elements of Infor Public Sector</p>
@@ -89,7 +89,7 @@
                 <li>Typescript</li>
             </div>
         </section>
-        <section class="rowspan-2">
+        <section class="colspan rowspan-2">
             <h2>Projects</h2>
             <h4>Collage Editor</h4>
             <p>I resigned from Infor July 2022 to travel with my family. In December, I
@@ -116,9 +116,9 @@
             <p>Until May 2022 I was building <a href="https://github.com/corey-alix/meathead">Meathead</a> to track my
                 gym gains.</p>
             <div class="skills">
-                <li class="colspan-2">Progressive Web Apps</li>
+                <li>PWA</li>
                 <li>github</li>
-                <li class="colspan-2">two-way data sync</li>
+                <li>data sync</li>
                 <li>typescript</li>
             </div>
             <h4>Headache</h4>
@@ -126,10 +126,11 @@
                 loves playing Cup Head and wanted to make a copy for himself. We cloned the game controller behavior as
                 well as the spirit of the game.</p>
             <div class="skills">
-                <li class="colspan-2">Collaboration</li>
+                <li>Collaboration</li>
                 <li>github</li>
-                <li class="colspan-2">requestAnimationFrame</li>
-                <li>SVG animation</li>
+                <li>Animation</li>
+                <li>HTML</li>
+                <li>CSS</li>
             </div>
             <h4>Little Light Show</h4>
             <p>December 2021 I built <a href="https://github.com/corey-alix/littlelightshow">Little Light Show</a> to
@@ -142,10 +143,10 @@
                 <li>Netlify</li>
                 <li>Offline first</li>
                 <li>Typescript</li>
-                <li class="colspan-2">Progressive Web Apps</li>
+                <li>PWA</li>
             </div>
         </section>
-        <section>
+        <section class="colspan">
             <h2>Outside Interests</h2>
             <p>I enjoy mountain biking and skiing, road biking and playing soccer. I like yoga, boxing, ultimate frisbee
                 and making games, but I love writing code more
@@ -155,11 +156,8 @@
 </body>
 
 <style>
-    @media print {
-        .skills > li::before,
-        ul>li::before {
-            content: "• " !important;
-        }
+    .colspan {
+            grid-column: span 2;
     }
 
     body {
@@ -189,7 +187,7 @@
 
     .skills {
         display: grid;
-        grid-template-columns: repeat(auto-fit, clamp(6rem, 50%, 8rem));
+        grid-template-columns: repeat(auto-fit, 10rem);
     }
 
     .skills>li {
@@ -239,6 +237,22 @@
 
     .colspan-2 {
         grid-column: span 2;
+    }
+
+</style>
+
+<style>
+    @media print {
+        .skills > li::before,
+        ul>li::before {
+            content: "• " !important;
+        }
+    }
+
+    @media (min-width: 600px) {
+        .colspan {
+            grid-column: span 1;
+        }
     }
 </style>
 
