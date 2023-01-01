@@ -4,6 +4,7 @@
 <head>
     <title>CV 2023 January</title>
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 <body>
@@ -178,17 +179,17 @@
         text-decoration: underline;
     }
 
-    .skills {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, 8rem);
-    }
-
     ul>li {
         list-style: none;
     }
 
     ul>li::before {
         content: "☑";
+    }
+
+    .skills {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, clamp(6rem, 50%, 8rem));
     }
 
     .skills>li {
