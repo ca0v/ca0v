@@ -143,7 +143,7 @@
         <br />
         <p>
           I also spent time with Vue, React, Go, Rust, and built
-          <a href="https://ng-wordle.netlify.app/">this silly game</a> in
+          <a class="if-screen" href="https://ng-wordle.netlify.app/">this silly game</a> <span class="if-print ul">https://ng-wordle.netlify.app</span> in
           Angular.
         </p>
         <h4>Meathead</h4>
@@ -331,8 +331,15 @@
     }
 
     @media print {
+      @page {
+        size: A3;
+      }
       * {
         font-size: 11pt !important;
+      }
+      body {
+        padding: 0;
+        padding: 1rem;
       }
       .if-print {
         display: initial;
@@ -366,6 +373,5 @@
         padding-bottom: 1rem;
       }
     }
-
   </style>
 </html>
