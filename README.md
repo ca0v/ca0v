@@ -18,8 +18,6 @@ These projects had a purpose beyond practicing with technology.  Some are behind
 
 * [little light show](https://lightshow.netlify.app)
 
-html)
-
 ## Resources
 
 * [Labs](https://ca0v.github.io/ca0v/labs)
