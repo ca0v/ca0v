@@ -1,0 +1,20 @@
+{
+  "name": "ca0v",
+  "version": "1.0.0",
+  "description": "I'm currently building a personal web presence while looking for a great job to finish the 4th quarter of my career strong and satisfied.",
+  "main": "index.js",
+  "scripts": {
+    "md-to-html": "pandoc -f markdown -t html5 -s README.md -o index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ca0v/ca0v.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ca0v/ca0v/issues"
+  },
+  "homepage": "https://github.com/ca0v/ca0v#readme"
+}
