@@ -73,7 +73,7 @@
         <h2>Education</h2>
         <h4>Carnegie Mellon University</h4>
         <i>B.S. Mathematics and Computer Science</i>
-        <i class="if-print"><br />B.S. Computer Engineering</i>
+        <i><br />B.S. Computer Engineering</i>
         <i class="if-print"><br />Graduated Spring of 1993</i>
       </section>
       <section class="colspan">
@@ -261,10 +261,6 @@
       font-size: smaller;
     }
 
-    .smaller {
-      font-size: smaller;
-    }
-
     .skills li::before {
       content: "☑ ";
       font-style: normal;
@@ -292,7 +288,7 @@
     }
 
     nav > p > svg {
-      min-width: 24px;
+      width: 24px;
       max-height: 24px;
     }
 
@@ -332,11 +328,12 @@
     .if-print,
     .if-screen {
       display: none;
-      margin: 0;
-      padding: 0;
     }
 
     @media print {
+      * {
+        font-size: 11pt !important;
+      }
       .if-print {
         display: initial;
       }
@@ -369,5 +366,6 @@
         padding-bottom: 1rem;
       }
     }
+
   </style>
 </html>
