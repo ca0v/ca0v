@@ -21,9 +21,7 @@
               d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
             />
           </svg>
-          <a class="email" href="mailto:coreyalix@outlook.com"
-            >coreyalix@outlook.com</a
-          >
+          <a class="email" href="mailto:ca0v@hotmail.com">ca0v@hotmail.com</a>
         </p>
         <p>
           <svg viewBox="0 0 1024 1024">
@@ -58,7 +56,8 @@
               d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"
             />
           </svg>
-          <a class="homepage" href="https://ca0v.us/about">More</a>
+          <a class="homepage if-screen" href="https://ca0v.us/about">More</a>
+          <span class="homepage if-print">https://ca0v.us/about</span>
         </p>
       </nav>
     </header>
@@ -74,7 +73,8 @@
         <h2>Education</h2>
         <h4>Carnegie Mellon University</h4>
         <i>B.S. Mathematics and Computer Science</i>
-        <br /><i>B.S. Computer Engineering</i>
+        <i class="if-print"><br />B.S. Computer Engineering</i>
+        <i class="if-print"><br />Graduated Spring of 1993</i>
       </section>
       <section class="colspan">
         <h2>Work Experience</h2>
@@ -219,6 +219,8 @@
       margin: 0;
       padding-bottom: 0.5em;
     }
+
+    ul,
     h1,
     h2,
     h4,
@@ -233,6 +235,10 @@
     ul > li {
       list-style: none;
       padding-bottom: 0.25rem;
+    }
+
+    ul > li:last-child {
+      padding-bottom: 0;
     }
 
     ul > li::before {
@@ -273,7 +279,7 @@
 
     nav {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
       column-gap: 0.25rem;
       row-gap: 1rem;
     }
@@ -285,8 +291,13 @@
       margin: 0;
     }
 
-    nav > p svg {
-      width: 24px;
+    nav > p > svg {
+      min-width: 24px;
+      max-height: 24px;
+    }
+
+    nav > p > a {
+      margin-left: 0; /* why does this work? */
     }
 
     .col1-2 {
@@ -318,10 +329,29 @@
   </style>
 
   <style>
+    .if-print,
+    .if-screen {
+      display: none;
+      margin: 0;
+      padding: 0;
+    }
+
     @media print {
+      .if-print {
+        display: initial;
+      }
+      a {
+        color: inherit;
+      }
       .skills > li::before,
       ul > li::before {
         content: "• " !important;
+      }
+    }
+
+    @media screen {
+      .if-screen {
+        display: initial;
       }
     }
 
@@ -330,6 +360,7 @@
         grid-column: span 1;
       }
     }
+
     @media ((min-width: 600px) and (min-height: 600px)) {
       .sticky-if {
         position: sticky;
