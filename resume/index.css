@@ -176,13 +176,13 @@ pin::before {
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 769px) {
   .colspan {
     grid-column: span 1;
   }
 }
 
-@media ((min-width: 600px) and (min-height: 600px)) {
+@media ((min-width: 769px) and (min-height: 769px)) {
   .sticky-if {
     position: sticky;
     top: 3rem;
