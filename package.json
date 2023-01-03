@@ -4,7 +4,8 @@
   "description": "I'm currently building a personal web presence while looking for a great job to finish the 4th quarter of my career strong and satisfied.",
   "main": "index.js",
   "scripts": {
-    "md-to-html": "pandoc -f markdown -t html5 -s README.md -o index.html -c https://unpkg.com/@picocss/pico@latest/css/pico.min.css -H header.html"
+    "md-to-html": "pandoc -f markdown -t html5 -s README.md -o index.html -c https://unpkg.com/@picocss/pico@latest/css/pico.min.css -H header.html",
+    "cv-to-pdf": "pandoc -f html -t pdf -s ./resume/cv.html -o cv.pdf"
   },
   "repository": {
     "type": "git",
