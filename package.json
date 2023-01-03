@@ -4,10 +4,7 @@
   "description": "I'm currently building a personal web presence while looking for a great job to finish the 4th quarter of my career strong and satisfied.",
   "main": "index.js",
   "scripts": {
-    "md-to-html": "pandoc -f markdown -t html5 -s README.md -o index.html -c https://unpkg.com/@picocss/pico@latest/css/pico.min.css -H header.html",
-    "cv-to-pdf:bad-2": "wkhtmltopdf ./resume/cv.html ./resume/cv.pdf",
-    "cv-to-pdf:worse": "htmldoc ./resume/cv.html --outfile ./resume/cv.pdf",
-    "cv-to-pdf:bad": "pandoc -f html -t latex -s ./resume/cv.html -o ./resume/cv.pdf"
+    "md-to-html": "pandoc -f markdown -t html5 -s README.md -o index.html -c https://unpkg.com/@picocss/pico@latest/css/pico.min.css -H header.html"
   },
   "repository": {
     "type": "git",
@@ -19,8 +16,5 @@
   "bugs": {
     "url": "https://github.com/ca0v/ca0v/issues"
   },
-  "homepage": "https://github.com/ca0v/ca0v#readme",
-  "dependencies": {
-    "puppeteer": "^19.4.1"
-  }
+  "homepage": "https://github.com/ca0v/ca0v#readme"
 }
