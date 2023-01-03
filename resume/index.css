@@ -1,0 +1,192 @@
+body,
+body > main {
+  padding: 16px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+body > header {
+  padding: 0;
+  margin: 0;
+  padding-bottom: 0.5em;
+}
+
+ul,
+h1,
+h2,
+h4,
+h6 {
+  --typography-spacing-vertical: 1rem;
+}
+
+textarea {
+  resize: none;
+  border: none;
+}
+
+.smaller {
+  font-size: 0.8em;
+}
+
+b,
+.bold {
+  font-weight: bold;
+}
+
+.ul {
+  text-decoration: underline;
+}
+
+.job-link {
+  padding-left: 1.5em;
+  background-image: url(https://mayvue.applytojob.com/img/v1.1/favicons/favicon.ico);
+  background-size: contain;
+}
+
+section h2 {
+  border-bottom: 1px solid;
+}
+
+ul > li {
+  list-style: none;
+  padding-bottom: 0.25rem;
+}
+
+ul > li:last-child {
+  padding-bottom: 0;
+}
+
+ul > li::before {
+  content: "☑ ";
+}
+
+.skills {
+  display: grid;
+  padding-left: 1rem;
+  grid-template-columns: repeat(auto-fit, 10rem);
+}
+
+.skills > li {
+  list-style: none;
+  text-transform: lowercase;
+  font-style: italic;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: smaller;
+}
+
+.skills li::before {
+  content: "☑ ";
+  font-style: normal;
+}
+
+.grid-col-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 0;
+  column-gap: 3rem;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  column-gap: 0.25rem;
+  row-gap: 1rem;
+}
+
+nav > p {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin: 0;
+}
+
+nav > p > svg {
+  width: 24px;
+  max-height: 24px;
+}
+
+nav > p > a {
+  margin-left: 0; /* why does this work? */
+}
+
+.col1-2 {
+  grid-column: 1 / 3;
+}
+
+.rowspan-2 {
+  grid-row: span 2;
+}
+
+.colspan {
+  grid-column: span 2;
+}
+
+.colspan-2 {
+  grid-column: span 2;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  background-color: var(--background-color);
+  padding-bottom: 1rem;
+}
+
+.ul {
+  border-bottom: 1px solid;
+}
+
+pin::before {
+  content: "📌 ";
+}
+
+.if-print,
+.if-screen {
+  display: none;
+}
+
+@media print {
+  @page {
+    size: A3;
+  }
+  * {
+    font-size: 11pt !important;
+  }
+  body {
+    padding: 0;
+    padding: 1rem;
+  }
+  .if-print {
+    display: initial;
+  }
+  a {
+    color: inherit;
+  }
+  .skills > li::before,
+  ul > li::before {
+    content: "• " !important;
+  }
+}
+
+@media screen {
+  .if-screen {
+    display: initial;
+  }
+}
+
+@media (min-width: 600px) {
+  .colspan {
+    grid-column: span 1;
+  }
+}
+
+@media ((min-width: 600px) and (min-height: 600px)) {
+  .sticky-if {
+    position: sticky;
+    top: 3rem;
+    background-color: var(--background-color);
+    padding-bottom: 1rem;
+  }
+}

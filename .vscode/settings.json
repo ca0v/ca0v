@@ -1,10 +1,10 @@
 {
-    "cSpell.words": [
-        "Infor",
-        "Mayvue"
-    ],
-    "editor.defaultFormatter": null,
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+  "cSpell.words": ["Infor", "Mayvue"],
+  "editor.defaultFormatter": null,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
