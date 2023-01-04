@@ -183,6 +183,10 @@ pin::before {
   }
 }
 
+.pad-bottom {
+  padding-bottom: 1rem;
+
+}
 @media screen {
   .if-print {
     display: none;
