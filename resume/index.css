@@ -160,32 +160,8 @@ pin::before {
   content: "📌 ";
 }
 
-@media print {
-  @page {
-    size: A3;
-  }
-  * {
-    font-size: 11pt !important;
-  }
-  .if-screen {
-    display: none;
-  }
-  body {
-    padding: 0;
-    padding: 1rem;
-  }
-  a {
-    color: inherit;
-  }
-  .skills > li::before,
-  ul > li::before {
-    content: "• " !important;
-  }
-}
-
 .pad-bottom {
   padding-bottom: 1rem;
-
 }
 @media screen {
   .if-print {
@@ -229,5 +205,32 @@ pin::before {
     top: 3rem;
     background-color: var(--background-color);
     padding-bottom: 1rem;
+  }
+
+  @media print {
+    @page {
+      size: A3;
+    }
+    * {
+      font-size: 11pt !important;
+    }
+    .sticky-if,
+    .sticky {
+      position: relative;
+    }
+    .if-screen {
+      display: none;
+    }
+    body {
+      padding: 0;
+      padding: 1rem;
+    }
+    a {
+      color: inherit;
+    }
+    .skills > li::before,
+    ul > li::before {
+      content: "• " !important;
+    }
   }
 }
