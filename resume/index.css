@@ -219,6 +219,10 @@ h4 {
   margin-top: 1em;
 }
 
+section {
+  margin-bottom: 2rem;
+}
+
 @media only screen {
   .if-print {
     display: none;
@@ -302,10 +306,6 @@ h4 {
     position: absolute;
     right: 0;
     text-align: right;
-  }
-
-  section {
-    margin-bottom: 2rem;
   }
 
   section:last-child {
