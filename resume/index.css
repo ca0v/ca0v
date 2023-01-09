@@ -255,6 +255,10 @@ pin::before {
     text-transform: uppercase;
   }
 
+  h4 {
+    margin-top: 1em;
+  }
+
   nav > p > i {
     display: none;
   }
