@@ -235,35 +235,52 @@ pin::before {
     padding: 0;
     padding: 1rem;
   }
+
   a {
     color: inherit;
   }
+
   p {
     margin-top: 0.25em;
     margin-bottom: 0.5em;
   }
+
   h1 {
     font-size: 20pt !important;
     letter-spacing: 0.8em;
   }
+
   h1,
   h2 {
     text-transform: uppercase;
   }
+
+  nav > p > i {
+    display: none;
+  }
+
+  nav > p > a {
+    text-align: center;
+  }
+  
   .sticky-if,
   .sticky {
     position: inherit;
   }
+
   .if-screen {
     display: none !important;
   }
+
   .colspan {
     grid-column: span 1;
   }
+
   .skills > li::before,
   ul > li::before {
     content: "• " !important;
   }
+
   .title-date span:last-child {
     /* align to right edge of parent */
     position: absolute;
