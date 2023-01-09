@@ -106,8 +106,9 @@ nav > p {
   margin: 0;
 }
 
+nav > p > span,
 nav > p > a {
-  margin-left: 0; /* why does this work? */
+  margin-left: 0; /* this fixes the gap between icon and anchor..but how? */
 }
 
 .col1-2 {
@@ -272,7 +273,9 @@ h4 {
     display: none;
   }
 
+  nav > p > span,
   nav > p > a {
+    width: 100%;
     text-align: center;
   }
 
