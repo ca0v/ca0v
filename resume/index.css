@@ -231,12 +231,22 @@ pin::before {
     font-family: Times New Roman, serif !important;
     font-size: 11pt !important;
   }
-  body, body > main {
+  body,
+  body > main {
     padding-bottom: 0;
   }
 
   a {
     color: inherit;
+    font-style: italic;
+  }
+
+  a::before {
+    content: open-quote;
+  }
+
+  a::after {
+    content: close-quote;
   }
 
   p {
@@ -265,7 +275,7 @@ pin::before {
   nav > p > a {
     text-align: center;
   }
-  
+
   .sticky-if,
   .sticky {
     position: inherit;
@@ -294,7 +304,7 @@ pin::before {
   section {
     margin-bottom: 2rem;
   }
-  
+
   section:last-child {
     margin-bottom: 0;
   }
