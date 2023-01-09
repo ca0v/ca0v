@@ -132,10 +132,14 @@ nav > p > a {
   flex-direction: column;
 }
 
+.opaque {
+  background-color: var(--background-color);
+  z-index: 1;
+}
+
 .sticky {
   position: sticky;
   top: 0;
-  background-color: var(--background-color);
   padding-bottom: 1rem;
 }
 
@@ -198,7 +202,6 @@ pin::before {
   .sticky-if {
     position: sticky;
     top: 3rem;
-    background-color: var(--background-color);
     padding-bottom: 1rem;
   }
 }
