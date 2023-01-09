@@ -210,6 +210,10 @@ pin::before {
   position: relative;
 }
 
+.no-break {
+  page-break-inside: avoid;
+}
+
 @media only screen {
   .if-print {
     display: none;
@@ -219,7 +223,7 @@ pin::before {
 @media only print {
   @page {
     margin: 0;
-    margin-top: 1.5em;
+    margin-top: 1em;
   }
   * {
     transition: none !important;
