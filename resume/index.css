@@ -270,4 +270,9 @@ pin::before {
     right: 0;
     text-align: right;
   }
+
+  section {
+    margin-bottom: 2rem;
+  }
+  
 }
