@@ -231,9 +231,8 @@ pin::before {
     font-family: Times New Roman, serif !important;
     font-size: 11pt !important;
   }
-  body {
-    padding: 0;
-    padding: 1rem;
+  body, body > main {
+    padding-bottom: 0;
   }
 
   a {
@@ -296,4 +295,7 @@ pin::before {
     margin-bottom: 2rem;
   }
   
+  section:last-child {
+    margin-bottom: 0;
+  }
 }
