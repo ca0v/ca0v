@@ -203,6 +203,10 @@ pin::before {
   }
 }
 
+.title-date {
+  position: relative;
+}
+
 @media only screen {
   .if-print {
     display: none;
@@ -212,11 +216,12 @@ pin::before {
 @media only print {
   @page {
     page-break-inside: avoid;
-    margin: 0;    
+    margin: 0;
   }
   * {
     transition: none !important;
     line-height: 1.2;
+    font-family: Times New Roman, serif !important;
     font-size: 11pt !important;
   }
   body {
@@ -234,7 +239,8 @@ pin::before {
     font-size: 20pt !important;
     letter-spacing: 0.8em;
   }
-  h1,h2 {
+  h1,
+  h2 {
     text-transform: uppercase;
   }
   .sticky-if,
@@ -251,4 +257,10 @@ pin::before {
   ul > li::before {
     content: "• " !important;
   }
+  .title-date span:last-child {
+    /* align to right edge of parent */
+    position:absolute;
+    right: 0;
+    text-align: right;
+  }  
 }
