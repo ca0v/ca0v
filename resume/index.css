@@ -214,6 +214,10 @@ pin::before {
   page-break-inside: avoid;
 }
 
+h4 {
+  margin-top: 1em;
+}
+
 @media only screen {
   .if-print {
     display: none;
@@ -262,10 +266,6 @@ pin::before {
   h1,
   h2 {
     text-transform: uppercase;
-  }
-
-  h4 {
-    margin-top: 1em;
   }
 
   nav > p > i {
