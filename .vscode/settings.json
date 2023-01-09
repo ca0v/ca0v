@@ -1,5 +1,14 @@
 {
-  "cSpell.words": ["Bumwraps", "Cuphead", "Gilford", "Infor", "Mayvue"],
+  "cSpell.words": [
+    "Bumwraps",
+    "Cuphead",
+    "Gilford",
+    "Infor",
+    "mapbox",
+    "Mayvue",
+    "Pico",
+    "Polypane"
+  ],
   "editor.defaultFormatter": null,
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"

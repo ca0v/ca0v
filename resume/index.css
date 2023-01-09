@@ -164,12 +164,6 @@ pin::before {
 .pad-bottom {
   padding-bottom: 1rem;
 }
-@media screen {
-  .if-print {
-    display: none;
-  }
-}
-
 @media (min-width: 769px) {
   .colspan {
     grid-column: span 1;
@@ -207,32 +201,43 @@ pin::before {
     background-color: var(--background-color);
     padding-bottom: 1rem;
   }
+}
 
-  @media print {
-    * {
-      line-height: 1.5;
-    }
-    .sticky-if,
-    .sticky {
-      position: inherit;
-    }
-    .if-screen {
-      display: none;
-    }
-    body {
-      padding: 0;
-      padding: 1rem;
-    }
-    a {
-      color: inherit;
-    }
-    p {
-      margin-top: 0.25em;
-      margin-bottom: 0.5em;
-    }
-    .skills > li::before,
-    ul > li::before {
-      content: "• " !important;
-    }
+@media only screen {
+  .if-print {
+    display: none;
+  }
+}
+
+@media only print {
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+  * {
+    line-height: 1.5;
+    transition: none !important;
+  }
+  .sticky-if,
+  .sticky {
+    position: inherit;
+  }
+  .if-screen {
+    display: none !important;
+  }
+  body {
+    padding: 0;
+    padding: 1rem;
+  }
+  a {
+    color: inherit;
+  }
+  p {
+    margin-top: 0.25em;
+    margin-bottom: 0.5em;
+  }
+  .skills > li::before,
+  ul > li::before {
+    content: "• " !important;
   }
 }
