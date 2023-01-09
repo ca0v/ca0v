@@ -1,10 +1,5 @@
 {
-  "cSpell.words": [
-    "Bumwraps",
-    "Gilford",
-    "Infor",
-    "Mayvue"
-  ],
+  "cSpell.words": ["Bumwraps", "Cuphead", "Gilford", "Infor", "Mayvue"],
   "editor.defaultFormatter": null,
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"

@@ -14,12 +14,13 @@ body > header {
   padding-bottom: 0.5em;
 }
 
-ul,
 h1,
 h2,
+h3,
 h4,
+h5,
 h6 {
-  --typography-spacing-vertical: 1rem;
+  --typography-spacing-vertical: 0;
 }
 
 textarea {
@@ -208,15 +209,12 @@ pin::before {
   }
 
   @media print {
-    @page {
-      size: A3;
-    }
     * {
-      font-size: 11pt !important;
+      line-height: 1.5;
     }
     .sticky-if,
     .sticky {
-      position: relative;
+      position: inherit;
     }
     .if-screen {
       display: none;
@@ -227,6 +225,10 @@ pin::before {
     }
     a {
       color: inherit;
+    }
+    p {
+      margin-top: 0.25em;
+      margin-bottom: 0.5em;
     }
     .skills > li::before,
     ul > li::before {

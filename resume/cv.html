@@ -8,12 +8,11 @@
   </head>
 
   <body>
-    <div class="if-screen profile-pic center"></div>
+    <div class="profile-pic center if-screen"></div>
     <h1 class="sticky center if-screen">Corey Alix</h1>
-    <h1 class="if-print">Corey Alix</h1>
+    <h1 class="center if-print">Corey Alix</h1>
     <header class="sticky-if">
-      <p class="center if-screen pad-bottom">Senior Software Engineer</p>
-      <p class="if-print">Senior Software Engineer</p>
+      <p class="center pad-bottom if-screen">Senior Software Engineer</p>
       <nav>
         <p>
           <i class="bi-envelope"></i>
@@ -33,8 +32,9 @@
         </p>
         <p>
           <i class="bi-link"></i>
-          <a class="homepage if-screen" href="https://ca0v.us/about">More</a>
-          <span class="homepage if-print">https://ca0v.us/about</span>
+          <a class="if-screen" href="https://ca0v.us/about">More</a>
+          <div class="if-screen">SCREEN IS ON</div>
+          <span class="if-print">https://ca0v.us/about</span>
         </p>
       </nav>
     </header>
@@ -42,8 +42,8 @@
       <section class="colspan">
         <h2>Career Objective</h2>
         <p>
-          To share my ambition and energy with high-quality teammates that want
-          to make a difference.
+          To work with reactive frameworks and modern web technologies to build
+          applications that are easy to use and maintain.
         </p>
       </section>
       <section class="colspan">
@@ -56,26 +56,23 @@
       <section class="colspan rowspan-2">
         <h2>Work Experience</h2>
         <h4>Senior Software Engineer</h4>
-        <h5>Infor Global Solutions 1999-2022</h5>
+        <h5>Infor Global Solutions 1999 - July 2022</h5>
         <p>
-          Built and maintained the geospatial elements of Infor Public Sector
-          using ESRI and open source components.
+          Created the geospatial elements of Infor Public Sector using ESRI and
+          open source components.
         </p>
         <ul>
           <li>
-            Created and maintained the map components that integrate Infor
-            Public Sector products with geospatial services using
+            Created the map components that integrate Infor Public Sector
+            products with geospatial services using
             <a href="https://developers.arcgis.com/javascript/3/">ESRI JSAPI</a>
             and <a href="https://openlayers.org/">OpenLayers</a> libraries
           </li>
-          <li>Created and maintained the accompanying backend web services</li>
+          <li>Created the accompanying backend web services</li>
 
           <li>
-            Contributed to the design of a bi-directional ETL between our EAM
+            Contributed to the creation of a bi-directional ETL between our EAM
             and GIS systems
-          </li>
-          <li>
-            Worked toward bringing spatial data into our SQL Server database
           </li>
         </ul>
         <div class="skills if-screen">
@@ -93,16 +90,14 @@
         <br />
 
         <h4>General Manager</h4>
-        <h5>Bumwraps 1993-1999, Montgomery, VT</h5>
+        <h5>Bumwraps 1993-1999</h5>
         <p>
-          Built an accounting platform that included General Ledger, Check
-          Register, Accounts Payable, Accounts Receivable, Order Entry,
-          Inventory, Payroll.
+          Built accounting platform (General Ledger, Check Register, Accounts
+          Payable, Accounts Receivable, Order Entry, Inventory, Payroll)
         </p>
-        <p>Built CtPos Point of Sale app for two retail locations.</p>
-        <p>Built CtDigIt Embroidery Digitizer, CtDropIt Namedrop Builder</p>
-        <p>Delphi, C++, Paradox</p>
-        <p>Used those modules daily to manage warehouse and retail outlets</p>
+        <p>Built CtPos (point-of-sale) app for two retail sites</p>
+        <p>Built CtDropIt + CtDigIt (embroidery digitizer) apps</p>
+        <p>Leveraged these apps to effectively manage $5M business</p>
         <p>
           Taught a computer science class at United Christian Academy (Newport,
           VT) and coached soccer
@@ -119,12 +114,19 @@
       </section>
       <section class="colspan">
         <h2>Projects</h2>
-        <h4>Collage Editor</h4>
+        <h4>Print Server - January 2023</h4>
         <p>
-          I resigned from Infor July 2022 to travel with my family. In December,
-          I built <a href="https://ca0v.us/stories">just.be.collage</a> to learn
-          <a href="https://svelte.dev/">Svelte</a>, dotnet 7.0 on Ubuntu,
-          <a href="https://www.python.org/">Python</a> and basic PaaS.
+          Resolved issue of family devices not consistently being able to print
+          to the home printer.
+        </p>
+        <div class="skills if-screen">
+          <li class="lang">node</li>
+          <li class="lang">python</li>
+        </div>
+        <h4>Collage Editor - December 2022</h4>
+        <p>
+          Built <a href="https://ca0v.us/stories">just.be.collage</a> to
+          document our trip.
         </p>
         <div class="skills if-screen">
           <li class="lang">css transforms</li>
@@ -136,35 +138,35 @@
           <li class="platform">github</li>
           <li class="platform">ubuntu</li>
           <li class="math">trigonometry</li>
+          <br />
         </div>
-        <br />
+        <p>Practiced with Angular, Vue, React, Go, Rust</p>
+        <h4>Meathead - May 2022</h4>
         <p>
-          I also spent time with Vue, React, Go, Rust, and built
-          <a class="if-screen" href="https://ng-wordle.netlify.app/"
-            >this silly game</a
-          >
-          <span class="if-print ul">https://ng-wordle.netlify.app</span> in
-          Angular.
-        </p>
-        <h4>Meathead</h4>
-        <p>
-          Until May 2022 I was building
+          Built
           <a href="https://github.com/corey-alix/meathead">Meathead</a> to track
           my gym gains.
+          <span class="if-screen"
+            >See it <a href="https://meathead.netlify.com">here</a>.</span
+          >
         </p>
         <div class="skills if-screen">
           <li class="pattern">PWA</li>
           <li class="platform">github</li>
           <li class="pattern">data sync</li>
           <li class="lang">typescript</li>
+          <br />
         </div>
-        <h4>Headache</h4>
+        <h4>Headache - March 2022</h4>
         <p>
-          In early 2022 I built
+          Built
           <a href="https://github.com/ca0v/game-lab">Headache</a> with my
-          younger son, who loves playing Cup Head and wanted to make a copy for
-          himself. We cloned the game controller behavior as well as the spirit
-          of the game.
+          younger son, who loves playing Cuphead and wanted to make a copy for
+          himself. We cloned the game controller behavior and the spirit of the
+          game.
+          <span class="if-screen"
+            >Play it <a href="https://headache.netlify.com">here</a>.</span
+          >
         </p>
         <div class="skills if-screen">
           <li class="lang">CSS</li>
@@ -172,10 +174,11 @@
           <li class="pattern">Animation</li>
           <li class="platform">Collaboration</li>
           <li class="platform">github</li>
+          <br />
         </div>
-        <h4>Little Light Show</h4>
+        <h4>Little Light Show - December 2021</h4>
         <p>
-          In December 2021 I built
+          Built
           <a href="https://github.com/corey-alix/littlelightshow"
             >Little Light Show</a
           >
@@ -191,36 +194,56 @@
           <li class="platform">github</li>
           <li class="platform">Netlify</li>
         </div>
-        <h4>GitHub Labs</h4>
-        <p>
-          Some
-          <a href="https://github.com/ca0v">github</a> activity:
-        </p>
+        <span class="if-screen">
+          <h4>GitHub Labs</h4>
+          <p>
+            Some
+            <a href="https://github.com/ca0v">github</a> activity:
+          </p>
+          <ul>
+            <li>
+              <a href="https://github.com/ca0v/topology-lab"
+                >sqlite topology cli</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/ca0v/reverse-proxy-cache/tree/v1.0.8"
+                >dotnet reverse-proxy-cache</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/corey-alix/trip-planner-app/tree/v1.0.1"
+                >mapbox trip-planner PWA</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/corey-alix/schole-bus"
+                >sqlite schole-bus</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/ca0v/react-lab"
+                >react.js geography game</a
+              >
+            </li>
+          </ul></span
+        >
+      </section>
+      <section class="colspan if-print">
+        <h2>Skill Summary</h2>
         <ul>
           <li>
-            <a href="https://github.com/ca0v/topology-lab"
-              >sqlite topology cli</a
-            >
+            <b>Programming Languages:</b> C#, Python, Go, Javascript,
+            Typescript, HTML, CSS, SQL, Java, Bash, Powershell, Assembly, Basic
           </li>
           <li>
-            <a href="https://github.com/ca0v/reverse-proxy-cache/tree/v1.0.8"
-              >dotnet reverse-proxy-cache</a
-            >
+            <b>Platforms:</b>dotnet 7, Node, Svelte, Vue, Angular, React,
+            FaunaDB, ArcGIS Enterprise, MapServer, GeoServer
           </li>
           <li>
-            <a href="https://github.com/corey-alix/trip-planner-app/tree/v1.0.1"
-              >mapbox trip-planner PWA</a
-            >
-          </li>
-          <li>
-            <a href="https://github.com/corey-alix/schole-bus"
-              >sqlite schole-bus</a
-            >
-          </li>
-          <li>
-            <a href="https://github.com/ca0v/react-lab"
-              >react.js geography game</a
-            >
+            <b>Tools:</b>Copilot, Polypane, Postman, VSCode, Visual Studio,
+            PicoCSS, dotnet cli, git, github, npm, pip, iis, nginx
           </li>
         </ul>
       </section>
