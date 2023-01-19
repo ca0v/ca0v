@@ -21,5 +21,4 @@ These projects had a purpose beyond practicing with technology.  Some are behind
 ## Resources
 
 * [Labs](https://ca0v.github.io/ca0v/labs)
-* [CSS Lab](https://ca0v.github.io/css-lab/)
 * [Icons](https://icons.getbootstrap.com/icons/geo-alt/)
