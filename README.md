@@ -18,6 +18,8 @@ These projects had a purpose beyond practicing with technology.  Some are behind
 
 These are exploratory projects that I've done to learn a new technology or to practice with a technology I'm already familiar with.  They are all in a public github repo.
 
+* ["Secure" Chat](https://ca0v.us/chat/)
+* [HTML Labs](https://ca0v.github.io/html-lab/)
 * [HTML Labs](https://ca0v.github.io/html-lab/)
 * [CSS Labs](https://ca0v.github.io/css-lab/)
 * [Other Labs](https://ca0v.github.io/ca0v/labs)
