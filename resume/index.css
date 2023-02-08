@@ -215,6 +215,10 @@ pin::before {
   position: relative;
 }
 
+.page-break {
+  page-break-before: always;
+}
+
 .no-break {
   page-break-inside: avoid;
 }
