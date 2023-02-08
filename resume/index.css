@@ -235,6 +235,31 @@ section {
   .if-print {
     display: none;
   }
+
+  /* underline with a wavy line */
+  .show-change {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-underline-offset: 0.3em;
+    text-decoration-color: transparent;
+    animation: fade-underline 2s forwards;
+    animation-timing-function: ease-out;
+  }
+
+  .show-change:hover {
+    animation: none;
+  }
+
+  @keyframes fade-underline {
+    0%,
+    100% {
+      text-decoration-color: transparent;
+    }
+    20%,
+    80% {
+      text-decoration-color: red;
+    }
+  }
 }
 
 @media only print {
